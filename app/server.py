@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1cXsvnIDuoHvza9vFgjxA18LGw7zujwtt'
-export_file_name = 'best_model.h5'
+export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_name = 'export.pkl'
 
-classes = ['BrownSpot' 'Healthy' 'Hispa' 'LeafBlast']
+classes = ['black', 'grizzly', 'teddys']
 path = Path(__file__).parent
 
 app = Starlette()
